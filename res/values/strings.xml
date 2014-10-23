@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"定位仪"</string>
+     <string name="map_name">"定位仪地图"</string>
+    
+    <string name="action_settings">Settings</string>
+
+</resources>

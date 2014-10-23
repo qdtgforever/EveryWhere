@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:background="@drawable/location_backguand1" >
+       
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:text="定位" 
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:text="查看地图"
+        android:textStyle="bold" />
+  <!--       <Button
+        android:id="@+id/share_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="地图分享"
+        android:textStyle="bold" /> -->
+
+    <mu.junling.view.CompassView
+        android:id="@+id/compass_of_myposition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/compass123" >
+    </mu.junling.view.CompassView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dirction"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" 
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Coordinate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" 
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Coordinate"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
